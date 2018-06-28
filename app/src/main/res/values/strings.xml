@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">JagaSehat</string>
+    <array name="jk">
+        <item>Pilih Jenis Kelamin</item>
+        <item>Laki-Laki</item>
+        <item>Perempuan</item>
+    </array>
+
+    <array name="pendidikan">
+        <item>Pilih Tingkat Pendidikan</item>
+        <item>SD</item>
+        <item>SMP</item>
+        <item>SMA</item>
+        <item>Perguruan Tinggi</item>
+    </array>
+    <array name="kerja">
+        <item>Pilih Pekerjaan</item>
+        <item>PNS</item>
+        <item>Swasta</item>
+        <item>TNI/Polri</item>
+        <item>Wiraswasta</item>
+        <item>Pelajar</item>
+        <item>Mahasiswa</item>
+        <item>Lainnya</item>
+    </array>
+    <string name="title_activity_nav_draw">NavDraw</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+</resources>
