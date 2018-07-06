@@ -154,20 +154,20 @@
             app:layout_constraintHorizontal_chainStyle="spread"
             app:layout_constraintStart_toEndOf="@+id/guideline"
             app:layout_constraintTop_toTopOf="@+id/imageButton4"
-            app:srcCompat="@drawable/ic_twitter2"
+            app:srcCompat="@drawable/call"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageButton
             android:id="@+id/imageButton4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="180dp"
             android:background="@android:color/transparent"
             app:layout_constraintEnd_toStartOf="@+id/imageButton5"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageButton3"
             app:layout_constraintTop_toTopOf="@+id/view2"
-            app:srcCompat="@drawable/ic_android"
+            app:srcCompat="@drawable/share"
             tools:ignore="VectorDrawableCompat" />
 
         <ImageButton
@@ -182,7 +182,7 @@
             app:layout_constraintStart_toEndOf="@+id/imageButton4"
             app:layout_constraintTop_toTopOf="@+id/imageButton4"
             app:layout_constraintVertical_bias="1.0"
-            app:srcCompat="@drawable/ic_apps"
+            app:srcCompat="@drawable/apps"
             tools:ignore="VectorDrawableCompat" />
 
     </android.support.constraint.ConstraintLayout>

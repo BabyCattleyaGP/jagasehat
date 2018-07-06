@@ -42,7 +42,7 @@ public class Contact extends AppCompatActivity {
         img_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(Contact.this,MainActivitySecond.class));
+                onBackPressed();
                 overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
             }
         });
