@@ -32,8 +32,10 @@ public class Contact extends AppCompatActivity {
             public void onClick(View view) {
                 Intent i = new Intent(android.content.Intent.ACTION_SEND);
                 i.setType("text/plain");
-                i.putExtra(android.content.Intent.EXTRA_TEXT, "My new app https://play.google.com/store/search?q=TECHHUBINDIAN");
-                startActivity(Intent.createChooser(i,"Share Via"));
+                i.putExtra(Intent.EXTRA_SUBJECT, "Saya menggunakan JagaSehat");
+                i.putExtra(android.content.Intent.EXTRA_TEXT, "Ayo gunakan aplikasi JagaSehat:http://github.com/BabyCattleyaGP/JagaSehat");
+                startActivity(Intent.createChooser(i,"Bagikan"));
+
             }
         });
 

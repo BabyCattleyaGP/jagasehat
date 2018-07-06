@@ -14,4 +14,16 @@
         android:layout_height="match_parent"
         android:layout_width="match_parent"/>
 
+    <ImageView
+        android:id="@+id/finish_chapter"
+        android:layout_below="@+id/card_stack"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="8dp"
+        android:onClick="finish_chapter"
+        android:src="@drawable/baseline_check"
+        android:visibility="gone" />
+
 </LinearLayout>

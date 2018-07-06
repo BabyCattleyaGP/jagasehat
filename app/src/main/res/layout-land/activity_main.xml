@@ -79,8 +79,10 @@
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:popupBackground="#FFC107"
-                            android:textColor="#b3b6bc"
-                            android:textSize="10sp" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textColorHint="@color/black"
+                            />
 
                     </LinearLayout>
 
@@ -97,7 +99,8 @@
                             android:text="Usia"
                             android:textAllCaps="true"
                             android:textColor="@color/black"
-                            android:textSize="12sp" />
+                            android:textSize="12sp"
+                            />
 
                         <EditText
                             android:id="@+id/usia"
@@ -111,7 +114,9 @@
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:textColor="@color/black"
-                            android:textSize="18sp" />
+                            android:textSize="18sp"
+                            android:textColorHint="@color/black"
+                            />
 
                     </LinearLayout>
 
@@ -141,7 +146,8 @@
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:popupBackground="#FFC107"
-                            android:textColor="#b3b6bc"
+                            android:textColor="@color/black"
+                            android:textColorHint="@color/black"
                             android:textSize="12sp" />
 
                     </LinearLayout>
@@ -172,8 +178,10 @@
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:popupBackground="#FFC107"
-                            android:textColor="#b3b6bc"
-                            android:textSize="10sp" />
+                            android:textColor="@color/black"
+                            android:textSize="10sp"
+                            android:textColorHint="@color/black"
+                            />
 
                     </LinearLayout>
 
@@ -204,6 +212,7 @@
                             android:paddingLeft="15dp"
                             android:paddingRight="15dp"
                             android:textColor="@color/black"
+                            android:textColorHint="@color/black"
                             android:textSize="18sp" />
 
                     </LinearLayout>
@@ -238,18 +247,6 @@
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:visibility="gone">
-
-            <Button
-                android:id="@+id/btnNext"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_alignParentRight="true"
-                android:background="@color/transparent"
-                android:fontFamily="sans-serif"
-                android:text="Sudah Pernah Masuk?"
-                android:textAllCaps="true"
-                android:textColor="@color/black"
-                android:textSize="10sp" />
 
         </RelativeLayout>
 

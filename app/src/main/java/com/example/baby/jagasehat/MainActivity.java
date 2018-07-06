@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity {
     EditText age,mail;
     Spinner jk,tp,job;
     Button btnAdd;
-    Button btnNext;
 
     DatabaseReference databaseData;
 
@@ -55,7 +54,6 @@ public class MainActivity extends AppCompatActivity {
         tp = (Spinner)findViewById(R.id.tp);
 
         btnAdd = (Button) findViewById(R.id.btnadd);
-        btnNext = (Button)findViewById(R.id.btnNext);
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,12 +62,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnNext.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MainActivity.this,MainActivitySecond.class));
-            }
-        });
     }
 
     private void addData(){
@@ -83,8 +75,14 @@ public class MainActivity extends AppCompatActivity {
             String id = databaseData.push().getKey();
             Data user = new Data(id,gender,usia,education,kerja,email);
             databaseData.child(id).setValue(user);
+
+            getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+                    .putBoolean("isFirstRun", false).apply();
+
             Toast.makeText(this, "Data Telah Masuk", Toast.LENGTH_LONG).show();
             startActivity(new Intent(MainActivity.this,MainActivitySecond.class));
+            overridePendingTransition(R.anim.slide_in_up, R.anim.slide_out_up);
+            finish();
 
         }else {
             Toast.makeText(this, "Data Tidak Lengkap", Toast.LENGTH_LONG).show();
