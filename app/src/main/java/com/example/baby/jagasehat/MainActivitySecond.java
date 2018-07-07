@@ -1,5 +1,5 @@
-
 package com.example.baby.jagasehat;
+
     import android.app.AlarmManager;
     import android.app.PendingIntent;
     import android.support.v7.app.AppCompatActivity;
@@ -32,10 +32,10 @@ public class MainActivitySecond extends AppCompatActivity implements View.OnClic
         hal4.setOnClickListener(this);
         kontak.setOnClickListener(this);
 
-        Boolean isFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
-                .getBoolean("isFirstRun", true);
+        Boolean daftarFirstRun = getSharedPreferences("PREFERENCE", MODE_PRIVATE)
+                .getBoolean("daftarFirstRun", true);
 
-        if (isFirstRun) {
+        if (daftarFirstRun) {
             TapTargetView.showFor(MainActivitySecond.this,
                     TapTarget.forView(findViewById(R.id.page1), "Yuk Mulai Bagian 1")
                             .outerCircleColor(R.color.colorPrimary)

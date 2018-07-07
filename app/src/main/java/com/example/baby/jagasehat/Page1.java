@@ -42,6 +42,9 @@ public class Page1 extends AppCompatActivity implements CardStack.CardEventListe
 
         finishButton.setVisibility(View.VISIBLE); //OR Gone
 
+        getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
+                .putBoolean("daftarFirstRun", false).apply();
+
     }
 
     public void finish_chapter(View view) {
