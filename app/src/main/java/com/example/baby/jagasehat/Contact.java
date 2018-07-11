@@ -50,7 +50,7 @@ public class Contact extends AppCompatActivity {
         img_call.setOnClickListener(new View.OnClickListener() {
             public void onClick(View arg0) {
                 Intent callIntent = new Intent(Intent.ACTION_CALL);
-                callIntent.setData(Uri.parse("tel:911"));
+                callIntent.setData(Uri.parse("tel:0224230240"));
 
                 if (ActivityCompat.checkSelfPermission(Contact.this,
                         Manifest.permission.CALL_PHONE) != PackageManager.PERMISSION_GRANTED) {
